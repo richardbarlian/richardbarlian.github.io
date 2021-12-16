@@ -23,7 +23,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(180, 180, 180);
+    background-color: white;
     border-radius: 6%;
 }
 
@@ -56,5 +56,5 @@ body {
 }
 
 .button-accent {
-    background-color: rgb(148, 148, 148);
+    color: rgb(20, 20, 20);
 }
