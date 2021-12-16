@@ -10,6 +10,7 @@
 
 body {
     height: 100vh;
+    background-color: rgb(82, 82, 82);
     background-size: 400%;
 }
 
@@ -22,6 +23,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(180, 180, 180);
+    border-radius: 6%;
 }
 
 #error-page .content {
@@ -50,4 +53,8 @@ body {
 .content p {
     font-size: 1.2em;
     color: #0d0d0d;
+}
+
+.button-accent {
+    background-color: rgb(148, 148, 148);
 }
