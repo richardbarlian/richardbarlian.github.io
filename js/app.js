@@ -18,6 +18,11 @@ toggleButton.addEventListener('click', () => {
 	navbarLinks.classList.toggle('active')
 })
 
-$(".navbar-links").click(function(){
-    navbarLinks.classList.toggle('active')
-});
+document.addEventListener("click", function(event) {
+	if (event.target.closest(".toggle-button")||event.target.closest(".navbar-links")) {
+		return
+	}
+	else {
+		navbarLinks.classList.toggle('active')
+	}
+})
