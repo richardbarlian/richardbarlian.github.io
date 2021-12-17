@@ -234,7 +234,6 @@ nav ul {
 }
 
 nav li {
-	display: inline-block;
 	margin: .7em;
 	font-weight: 900;
 	text-decoration: none;
@@ -245,11 +244,8 @@ nav li {
 }
 
 nav a {
-	font-weight: 900;
 	text-decoration: none;
-	text-transform: uppercase;
 	color: white;
-	font-size: 1.2rem;
 }
 
 nav a:hover,
