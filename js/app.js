@@ -10,3 +10,10 @@ function parallax() {
 	var wScroll = $(window).scrollTop()
 	$('.parallax--bg').css('background-position', 'center ' + (wScroll*0.75)+'px');
 }
+
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+	navbarLinks.classList.toggle('active')
+})
