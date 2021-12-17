@@ -82,7 +82,6 @@ footer::after {
 
 
 @media (min-width: 40rem) {
-
 	[class^=col-] {
 		float: left;
 		padding: 0 .5em;
