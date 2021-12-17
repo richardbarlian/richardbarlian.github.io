@@ -250,8 +250,7 @@ nav a {
 	padding: .2em;
 }
 
-nav a:active,
-nav li:active {
+nav a:active {
 	color: #ddd;
 }
 
@@ -287,6 +286,12 @@ nav li:active {
 
 @media (min-width: 55rem) {
 	nav a:hover {
+		color: #ddd;
+	}
+}
+
+@media (max-width: 55rem) {
+	nav li:active {
 		color: #ddd;
 	}
 }
