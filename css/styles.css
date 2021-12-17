@@ -247,12 +247,11 @@ nav a {
 	text-decoration: none;
 	color: white;
 	font-weight: 900;
+	padding: .2em;
 }
 
-nav a:hover,
-nav a:focus,
-nav li:hover,
-nav li:focus {
+nav a:active,
+nav li:active {
 	color: #ddd;
 }
 
@@ -270,7 +269,6 @@ nav li:focus {
 	}
 }
 
-
 /*HERO-HOME*/
 
 .home-hero {
@@ -284,6 +282,12 @@ nav li:focus {
 	.home-hero {
 		height: 100vh;
 		padding-top: 35vh;
+	}
+}
+
+@media (min-width: 55rem) {
+	nav a:hover {
+		color: #ddd;
 	}
 }
 
