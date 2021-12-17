@@ -230,6 +230,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	float: right;
 }
 
 nav li {
@@ -249,7 +250,7 @@ nav a {
 	font-weight: 900;
 }
 
-nav a:active {
+nav li:hover {
 	color: #ddd;
 }
 
@@ -266,18 +267,6 @@ nav a:active {
 	.home-hero {
 		height: 100vh;
 		padding-top: 35vh;
-	}
-}
-
-@media (min-width: 55rem) {
-	nav a:hover {
-		color: #ddd;
-	}
-}
-
-@media (max-width: 55rem) {
-	nav li:active {
-		color: #ddd;
 	}
 }
 
@@ -605,5 +594,8 @@ footer {
 	}
 	.dropdown-content {
 		width: 100%;
+	}
+	nav ul {
+		float: none;
 	}
 }
