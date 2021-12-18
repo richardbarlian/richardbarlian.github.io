@@ -26,3 +26,9 @@ document.addEventListener("click", function(event) {
 		navbarLinks.classList.toggle('active')
 	}
 })
+
+$(document).on("click", "#ends", function () {
+	$("#ends").each(function () {
+		navbarLinks.classList.toggle('active')
+	});
+});
