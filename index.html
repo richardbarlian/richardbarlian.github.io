@@ -1,408 +1,688 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Richard's Website</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <!--Favicon-->
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="57x57"
+            href="favicon/apple-touch-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="114x114"
+            href="favicon/apple-touch-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="72x72"
+            href="favicon/apple-touch-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="144x144"
+            href="favicon/apple-touch-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="60x60"
+            href="favicon/apple-touch-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="120x120"
+            href="favicon/apple-touch-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="76x76"
+            href="favicon/apple-touch-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon-precomposed"
+            sizes="152x152"
+            href="favicon/apple-touch-icon-152x152.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="favicon/favicon-196x196.png"
+            sizes="196x196"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="favicon/favicon-32x32.png"
+            sizes="32x32"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="favicon/favicon-16x16.png"
+            sizes="16x16"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="favicon/favicon-128.png"
+            sizes="128x128"
+        />
+        <meta name="application-name" content="&nbsp;" />
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta
+            name="msapplication-TileImage"
+            content="favicon/mstile-144x144.png"
+        />
+        <meta
+            name="msapplication-square70x70logo"
+            content="favicon/mstile-70x70.png"
+        />
+        <meta
+            name="msapplication-square150x150logo"
+            content="favicon/mstile-150x150.png"
+        />
+        <meta
+            name="msapplication-wide310x150logo"
+            content="favicon/mstile-310x150.png"
+        />
+        <meta
+            name="msapplication-square310x310logo"
+            content="favicon/mstile-310x310.png"
+        />
+    </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Richard's Website</title>
-	<link href="css/styles.css" rel="stylesheet" type="text/css">
-	<!--Favicon-->
-	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicon/apple-touch-icon-57x57.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicon/apple-touch-icon-114x114.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicon/apple-touch-icon-72x72.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicon/apple-touch-icon-144x144.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicon/apple-touch-icon-60x60.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicon/apple-touch-icon-120x120.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicon/apple-touch-icon-76x76.png" />
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicon/apple-touch-icon-152x152.png" />
-	<link rel="icon" type="image/png" href="favicon/favicon-196x196.png" sizes="196x196" />
-	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
-	<link rel="icon" type="image/png" href="favicon/favicon-128.png" sizes="128x128" />
-	<meta name="application-name" content="&nbsp;" />
-	<meta name="msapplication-TileColor" content="#FFFFFF" />
-	<meta name="msapplication-TileImage" content="favicon/mstile-144x144.png" />
-	<meta name="msapplication-square70x70logo" content="favicon/mstile-70x70.png" />
-	<meta name="msapplication-square150x150logo" content="favicon/mstile-150x150.png" />
-	<meta name="msapplication-wide310x150logo" content="favicon/mstile-310x150.png" />
-	<meta name="msapplication-square310x310logo" content="favicon/mstile-310x310.png" />
-</head>
+    <body>
+        <!--Nav bar-->
+        <header>
+            <nav class="navbar">
+                <a href="" onclick="return false;" class="toggle-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <ul class="navbar-links">
+                    <a href="#home" id="ends">
+                        <li>Home</li>
+                    </a>
+                    <a href="#about" id="ends">
+                        <li>About</li>
+                    </a>
+                    <a href="#notable_achievements" id="ends">
+                        <li>Notable Achievements</li>
+                    </a>
+                    <div class="dropdown">
+                        <li>More Achievements</li>
+                        <div class="dropdown-content">
+                            <a href="#gold" id="ends">Gold Award</a>
+                            <a href="#silver" id="ends">Silver Award</a>
+                            <a href="#bronze" id="ends">Bronze Award</a>
+                            <a href="#honorable" id="ends">Honorable Mention</a>
+                            <a href="#others" id="ends">Others</a>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </header>
 
-<body>
-	<!--Nav bar-->
-	<header>
-		<nav class="navbar">
-			<a href="" onclick="return false;" class="toggle-button">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-			</a>
-			<ul class="navbar-links">
-				<a href="#home" id="ends">
-					<li>Home</li>
-				</a>
-				<a href="#about" id="ends">
-					<li>About</li>
-				</a>
-				<a href="#notable_achievements" id="ends">
-					<li>Notable Achievements</li>
-				</a>
-				<div class="dropdown">
-					<li>More Achievements</li>
-					<div class="dropdown-content">
-						<a href="#gold" id="ends">Gold Award</a>
-						<a href="#silver" id="ends">Silver Award</a>
-						<a href="#bronze" id="ends">Bronze Award</a>
-						<a href="#honorable" id="ends">Honorable Mention</a>
-						<a href="#others" id="ends">Others</a>
-					</div>
-				</div>
-			</ul>
-		</nav>
-	</header>
+        <section
+            style="background-image: url(img/header/trophy.jpg)"
+            class="home-hero parallax--bg"
+            id="home"
+        >
+            <div class="container">
+                <h1 class="title parallax--box">
+                    Richard Henry Barlian
+                    <span>All of my achievements in one website</span>
+                </h1>
+                <a href="#about" class="button button-accent">About Me</a>
+            </div>
+            <div id="about"></div>
+        </section>
 
-	<section style="background-image: url(img/header/trophy.jpg);" class="home-hero parallax--bg" id="home">
-		<div class="container">
-			<h1 class="title parallax--box">Richard Henry Barlian <span>All of my achievements in one website</span>
-			</h1>
-			<a href="#about" class="button button-accent">About Me</a>
-		</div>
-		<div id="about"></div>
-	</section>
+        <!--Introduction text box-->
+        <div class="container">
+            <section class="home-about">
+                <div class="home-about-textbox parallax--box">
+                    <h1>Richard Barlian</h1>
+                    <p>
+                        Hello, my name is Richard. I am currently Primary 6. I
+                        am a Math, Science, and Computer enthusiast. I am a
+                        proud winner of the WAICY Competition Indonesian Finals
+                        2021. My other hobby is performing.
+                        <br />
+                        Before Covid-19, I used to perform in public malls. You
+                        can check out the recordings in my Youtube channel (<a
+                            class="link"
+                            target="_blank"
+                            href="https://www.youtube.com/channel/UCJMFhWgg3WRKr1Non1z-Rtg"
+                            >my Youtube channel</a
+                        >). I made this website to learn about HTML programming
+                        on a deeper level. You can also check out my other
+                        projects in my Github Account (<a
+                            class="link"
+                            target="_blank"
+                            href="https://github.com/richardbarlian/"
+                            >my Github account</a
+                        >).
+                    </p>
+                </div>
+                <div id="notable_achievements"></div>
+            </section>
+        </div>
 
-	<!--Introduction text box-->
-	<div class="container">
-		<section class="home-about">
-			<div class="home-about-textbox parallax--box">
-				<h1>Richard Barlian</h1>
-				<p>Hello, my name is Richard. I am currently Primary 6.
-					I am a Math, Science, and Computer enthusiast.
-					I am a proud winner of the WAICY Competition Indonesian Finals 2021.
-					My other hobby is performing.
-					<br>
-					Before Covid-19, I used to perform in public malls.
-					You can check out the recordings in my Youtube channel (<a class="link" target="_blank"
-						href="https://www.youtube.com/channel/UCJMFhWgg3WRKr1Non1z-Rtg">my Youtube channel</a>).
-					I made this website to learn about HTML programming on a deeper level.
-					You can also check out my other projects in my Github Account (<a class="link" target="_blank"
-						href="https://github.com/richardbarlian/">my Github account</a>).
-				</p>
-			</div>
-			<div id="notable_achievements"></div>
-		</section>
-	</div>
+        <!--Notable Achievements-->
+        <section class="portfolio">
+            <h1>Notable Achievements</h1>
 
+            <figure class="port-item" data-tilt data-tilt-max="10">
+                <img src="img/competition_logo/waicy.png" alt="WAICY logo" />
+                <figcaption class="port-desc">
+                    <p>
+                        1st Winner of WAICY (World Artificial Intelligence
+                        Competition for Youth) Indonesian Final 2021, Group B
+                        (Age 10-13)
+                    </p>
+                </figcaption>
+            </figure>
 
-	<!--Notable Achievements-->
-	<section class="portfolio">
-		<h1>Notable Achievements</h1>
+            <figure class="port-item" data-tilt data-tilt-max="10">
+                <img src="img/competition_logo/jismo.png" alt="JISMO logo" />
+                <figcaption class="port-desc">
+                    <p>
+                        Diamond award (top 1%) from JISMO Autumn 2021 in Math
+                        Category for Grade 6
+                    </p>
+                </figcaption>
+            </figure>
 
-		<figure class="port-item" data-tilt data-tilt-max="10">
-			<img src="img/competition_logo/waicy.png" alt="WAICY logo">
-			<figcaption class="port-desc">
-				<p>1st Winner of WAICY (World Artificial Intelligence Competition for Youth) Indonesian Final 2021,
-					Group B (Age 10-13)</p>
-			</figcaption>
-		</figure>
+            <figure class="port-item" data-tilt data-tilt-max="10">
+                <img src="img/competition_logo/amo.jpg" alt="AMO logo" />
+                <figcaption class="port-desc">
+                    <p>
+                        Gold award from AMO (American Math Olympiad) 2021 for
+                        Grade 6
+                    </p>
+                </figcaption>
+            </figure>
 
-		<figure class="port-item" data-tilt data-tilt-max="10">
-			<img src="img/competition_logo/jismo.png" alt="JISMO logo">
-			<figcaption class="port-desc">
-				<p>Diamond award (top 1%) from JISMO Autumn 2021 in Math Category for Grade 6</p>
-			</figcaption>
-		</figure>
+            <figure class="port-item" data-tilt data-tilt-max="10">
+                <img src="img/competition_logo/asmo.png" alt="ASMO logo" />
+                <figcaption class="port-desc">
+                    <p>
+                        Silver Medal from ASMO (Asian Science and Mathematics
+                        Olympiad) Competition in Science Category 2021 for Grade
+                        5
+                    </p>
+                </figcaption>
+            </figure>
 
-		<figure class="port-item" data-tilt data-tilt-max="10">
-			<img src="img/competition_logo/amo.jpg" alt="AMO logo">
-			<figcaption class="port-desc">
-				<p>Gold award from AMO (American Math Olympiad) 2021 for Grade 6</p>
-			</figcaption>
-		</figure>
+            <figure class="port-item" data-tilt data-tilt-max="10">
+                <img src="img/competition_logo/vanda.png" alt="VANDA logo" />
+                <figcaption class="port-desc">
+                    <p>
+                        Gold Medal from VANDA Science Competition Heat Round for
+                        Grade 5
+                    </p>
+                </figcaption>
+            </figure>
 
-		<figure class="port-item" data-tilt data-tilt-max="10">
-			<img src="img/competition_logo/asmo.png" alt="ASMO logo">
-			<figcaption class="port-desc">
-				<p>Silver Medal from ASMO (Asian Science and Mathematics Olympiad) Competition in Science Category 2021
-					for Grade 5</p>
-			</figcaption>
-		</figure>
+            <figure class="port-item" data-tilt data-tilt-max="10">
+                <img src="img/competition_logo/seamo.png" alt="SEAMO logo" />
+                <figcaption class="port-desc">
+                    <p>
+                        Silver Medal from SEAMO (Southeast Asian Mathematical
+                        Olympiad) 2021 Paper C (Grade 5-6)
+                    </p>
+                </figcaption>
+            </figure>
+        </section>
+        <br />
+        <br />
 
-		<figure class="port-item" data-tilt data-tilt-max="10">
-			<img src="img/competition_logo/vanda.png" alt="VANDA logo">
-			<figcaption class="port-desc">
-				<p>Gold Medal from VANDA Science Competition Heat Round for Grade 5</p>
-			</figcaption>
-		</figure>
+        <!--More Achievements-->
+        <h1>More Achievements</h1>
+        <section
+            id="gold"
+            style="background-image: url(img/award_logo/gold.png)"
+            class="parallax--bg award_header"
+        >
+            <div class="container">
+                <h1 class="title parallax--box">Gold Award</h1>
+            </div>
+            <div id="about"></div>
+        </section>
 
-		<figure class="port-item" data-tilt data-tilt-max="10">
-			<img src="img/competition_logo/seamo.png" alt="SEAMO logo">
-			<figcaption class="port-desc">
-				<p>Silver Medal from SEAMO (Southeast Asian Mathematical Olympiad) 2021 Paper C (Grade 5-6)</p>
-			</figcaption>
-		</figure>
-	</section>
-	<br>
-	<br>
+        <section>
+            <h2 class="award_heading">Gold Medal</h2>
+            <columns>
+                <div class="column">
+                    <h2>Math</h2>
+                    <p>
+                        <li>
+                            Gold award from AMO (American Math Olympiad) 2021
+                            for Grade 6
+                        </li>
+                        <br />
+                        <li>
+                            Diamond award (top 1%) from JISMO Autumn 2021 in
+                            Math Category for Grade 6
+                        </li>
+                        <br />
+                        <li>
+                            The Winner' award from IOS Student Olympiad 2020 for
+                            Grade 5-6
+                        </li>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>Science</h2>
+                    <p>
+                        <li>
+                            Gold Medal from VANDA Science Competition Heat Round
+                            for Grade 5
+                        </li>
+                        <br />
+                        <li>
+                            Ruby award (top 10%) from JISMO Autumn 2021 in
+                            Science Category for Grade 6
+                        </li>
+                        <br />
+                        <li>
+                            Gold Medal from Indonesia Students Science
+                            Competition National Level 2021 for Upper Primary
+                        </li>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>IT</h2>
+                    <p>
+                        <li>
+                            1st Winner of WAICY (World Artificial Intelligence
+                            Competition for Youth) Indonesian Final 2021, Group
+                            B (Age 10-13)
+                        </li>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>English</h2>
+                    <p>
+                        <li>
+                            'The Winner' award from IOS Student Olympiad 2020
+                            for Grade 5-6
+                        </li>
+                    </p>
+                </div>
+            </columns>
+        </section>
 
-	<!--More Achievements-->
-	<h1>More Achievements</h1>
-	<section id="gold" style="background-image: url(img/award_logo/gold.png);" class="parallax--bg award_header">
-		<div class="container">
-			<h1 class="title parallax--box">Gold Award</h1>
-		</div>
-		<div id="about"></div>
-	</section>
+        <section
+            id="silver"
+            style="background-image: url(img/award_logo/silver.png)"
+            class="parallax--bg award_header"
+        >
+            <div class="container">
+                <h1 class="title parallax--box">Silver Award</h1>
+            </div>
+            <div id="about"></div>
+        </section>
 
-	<section>
-		<h2 class="award_heading">Gold Medal</h2>
-		<columns>
-			<div class="column">
-				<h2>Math</h2>
-				<p>
-					<li>Gold award from AMO (American Math Olympiad) 2021 for Grade 6</li>
-					<br>
-					<li>Diamond award (top 1%) from JISMO Autumn 2021 in Math Category for Grade 6</li>
-					<br>
-					<li>The Winner' award from IOS Student Olympiad 2020 for Grade 5-6</li>
-				</p>
-			</div>
-			<div class="column">
-				<h2>Science</h2>
-				<p>
-					<li>Gold Medal from VANDA Science Competition Heat Round for Grade 5</li>
-					<br>
-					<li>Ruby award (top 10%) from JISMO Autumn 2021 in Science Category for Grade 6</li>
-					<br>
-					<li>Gold Medal from Indonesia Students Science Competition National Level 2021 for Upper Primary
-					</li>
-				</p>
-			</div>
-			<div class="column">
-				<h2>IT</h2>
-				<p>
-					<li>1st Winner of WAICY (World Artificial Intelligence Competition for Youth) Indonesian Final 2021,
-						Group B (Age 10-13)</li>
-				</p>
-			</div>
-			<div class="column">
-				<h2>English</h2>
-				<p>
-					<li>'The Winner' award from IOS Student Olympiad 2020 for Grade 5-6</li>
-				</p>
-			</div>
-			</div>
-			</column>
-	</section>
+        <section>
+            <h2 class="award_heading">Silver Medal</h2>
+            <columns>
+                <div class="column">
+                    <h2>Math</h2>
+                    <p>
+                        <li>
+                            Silver Medal from SEAMO (Southeast Asian
+                            Mathematical Olympiad) 2021 Paper C (Grade 5-6)
+                        </li>
+                        <br />
+                        <li>
+                            Outstanding Certificate from Singapore Math Global
+                            Assessment 2021 for Grade 5
+                        </li>
+                        <br />
+                        <li>Silver Medal from Big Bay Bei 2021 for Grade 6</li>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>Science</h2>
+                    <p>
+                        <li>
+                            Silver Medal from ISMAC 2021 National Event for
+                            Grade 5
+                        </li>
+                        <br />
+                        <li>
+                            Silver Medal from IMSO (International Mathematics
+                            and Science Olympiad) for Primary School 2021 for
+                            Primary 5-6
+                        </li>
+                        <br />
+                        <li>
+                            Silver Medal from KSI (Kompetisi Sains Indonesia)
+                            POSI (Pelatihan Olimpiade Sains Indonesia) National
+                            Level 2021 for Upper Primary
+                        </li>
+                        <br />
+                        <li>
+                            Silver Medal from HKISO (Hong Kong International
+                            Science Olympiad) Heat Round 2020-2021 for Primary 5
+                        </li>
+                        <br />
+                        <li>
+                            Silver Medal from Forpelindo 2021 National Level
+                        </li>
+                        <br />
+                        <li>
+                            'Distinction' award from HOTS (High Order Thinking
+                            Skill) Science Competition 2020 for Upper Primary
+                        </li>
+                        <br />
+                        <li>
+                            Silver Medal from ASMO (Asian Science and
+                            Mathematics Olympiad) Competition in Science
+                            Category 2021 for Grade 5
+                        </li>
+                        <br />
+                        <li>
+                            Silver Medal from PIMSO (Philippines International
+                            Mathematics Science Olympics) Competition in Science
+                            Category 2021 for Grade 5
+                        </li>
+                        <br />
+                        <li>
+                            Silver Medal from ISC (International Science
+                            Competition) Surya Institute for Grade 5-6
+                        </li>
+                        <br />
+                        <li>
+                            Silver Medal from Vanda Global Finals - Team for
+                            Grade 5
+                        </li>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>English</h2>
+                    <p>
+                        <li>
+                            2nd place winner of English Cup - Elite Competition
+                            2019 for Grade 3
+                        </li>
+                        <br />
+                        <li>
+                            2nd place winner of Story Reading Competition 2019
+                            at Dynata School for Grade 4-6
+                        </li>
+                    </p>
+                </div>
+            </columns>
+        </section>
 
-	<section id="silver" style="background-image: url(img/award_logo/silver.png);" class="parallax--bg award_header">
-		<div class="container">
-			<h1 class="title parallax--box">Silver Award</h1>
-		</div>
-		<div id="about"></div>
-	</section>
+        <section
+            id="bronze"
+            style="background-image: url(img/award_logo/bronze.png)"
+            class="parallax--bg award_header"
+        >
+            <div class="container">
+                <h1 class="title parallax--box">Bronze Award</h1>
+            </div>
+            <div id="about"></div>
+        </section>
 
-	<section>
-		<h2 class="award_heading">Silver Medal</h2>
-		<columns>
-			<div class="column">
-				<h2>Math</h2>
-				<p>
-					<li>Silver Medal from SEAMO (Southeast Asian Mathematical Olympiad) 2021 Paper C (Grade 5-6)</li>
-					<br>
-					<li>Outstanding Certificate from Singapore Math Global Assessment 2021 for Grade 5 </li>
-				</p>
-			</div>
-			<div class="column">
-				<h2>Science</h2>
-				<p>
-					<li>Silver Medal from ISMAC 2021 National Event for Grade 5</li>
-					<br>
-					<li>Silver Medal from IMSO (International Mathematics and Science Olympiad) for Primary School 2021
-						for Primary 5-6</li>
-					<br>
-					<li>Silver Medal from KSI (Kompetisi Sains Indonesia) POSI (Pelatihan Olimpiade Sains Indonesia)
-						National Level 2021 for Upper Primary</li>
-					<br>
-					<li>Silver Medal from HKISO (Hong Kong International Science Olympiad) Heat Round 2020-2021 for
-						Primary 5</li>
-					<br>
-					<li>Silver Medal from Forpelindo 2021 National Level</li>
-					<br>
-					<li>'Distinction' award from HOTS (High Order Thinking Skill) Science Competition 2020 for Upper
-						Primary</li>
-					<br>
-					<li>Silver Medal from ASMO (Asian Science and Mathematics Olympiad) Competition in Science Category
-						2021 for Grade 5</li>
-					<br>
-					<li>Silver Medal from PIMSO (Philippines International Mathematics Science Olympics) Competition in
-						Science Category 2021 for Grade 5</li>
-					<br>
-					<li>Silver Medal from ISC (International Science Competition) Surya Institute for Grade 5-6</li>
-				</p>
-			</div>
-			<div class="column">
-				<h2>English</h2>
-				<p>
-					<li>2nd place winner of English Cup - Elite Competition 2019 for Grade 3</li>
-					<br>
-					<li>2nd place winner of Story Reading Competition 2019 at Dynata School for Grade 4-6</li>
-				</p>
-			</div>
-			</column>
-	</section>
+        <section>
+            <h2 class="award_heading">Bronze Medal</h2>
+            <columns>
+                <div class="column">
+                    <h2>Math</h2>
+                    <p>
+                        <li>
+                            Bronze Medal from IKMC (International Kangaroo
+                            Mathematics Contest) Benjamin Level (5-6) in May
+                            2021
+                        </li>
+                        <br />
+                        <li>
+                            Bronze Medal from AMO (Asian Mathematics Olympiad)
+                            in 2021 Grade 5
+                        </li>
+                        <br />
+                        <li>
+                            Bronze Medal from TIMO (Thailand International
+                            Mathematical Olympiad) - Heat Round in 2021 for
+                            Grade 6
+                        </li>
+                        <br />
+                        <li>
+                            Bronze Medal from IMEC Online - National Round in
+                            2022 Category 2 (Grade 6 - 7)
+                        </li>
+                        <br />
+                        <li>
+                            Bronze Medal from ROC Arithmetic and Algebra on
+                            March 2021
+                        </li>
+                        <br />
+                        <li>
+                            Bronze Medal from OMSI (Olimpiade Matematika dan
+                            Sains Indonesia) in November 2020
+                        </li>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>Science</h2>
+                    <p>
+                        <li>
+                            Bronze Medal from Vanda Global Finals - Individual
+                            for Grade 5
+                        </li>
+                        <br />
+                        <li>
+                            Sapphire Medal from JISMO (Japanese International
+                            Science and Math Olympiad) for Science Category
+                            (Grade 5)
+                        </li>
+                        <br />
+                        <li>
+                            Bronze Medal from KSNR (Kompetisi Sains Nalaria
+                            Realistik) Primary Level 2021
+                        </li>
+                        <br />
+                        <li>Bronze Medal from POSI Got Talent 2021</li>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>English</h2>
+                    <p>
+                        <li>
+                            3rd Winner of BeeKidz Story Reading Olympiad 2019
+                        </li>
+                        <br />
+                        <li>
+                            3rd Winner of Brilliance National English Writing
+                            Story Primary School 2021
+                        </li>
+                    </p>
+                </div>
+            </columns>
+        </section>
 
-	<section id="bronze" style="background-image: url(img/award_logo/bronze.png);" class="parallax--bg award_header">
-		<div class="container">
-			<h1 class="title parallax--box">Bronze Award</h1>
-		</div>
-		<div id="about"></div>
-	</section>
+        <section
+            id="honorable"
+            style="background-image: url(img/award_logo/honorable.png)"
+            class="parallax--bg award_header"
+        >
+            <div class="container">
+                <h1 class="title parallax--box">Honorable Mention</h1>
+            </div>
+            <div id="about"></div>
+        </section>
 
-	<section>
-		<h2 class="award_heading">Bronze Medal</h2>
-		<columns>
-			<div class="column">
-				<h2>Math</h2>
-				<p>
-					<li>Bronze Medal from IKMC (International Kangaroo Mathematics Contest) Benjamin Level (5-6) in May
-						2021</li>
-					<br>
-					<li>Bronze Medal from ROC Arithmetic and Algebra on March 2021</li>
-					<br>
-					<li>Bronze Medal from OMSI (Olimpiade Matematika dan Sains Indonesia) in November 2020</li>
-					<br>
-					<li>Bronze Medal from AMO (Asian Mathematics Olympiad) in 2021 Grade 5</li>
-				</p>
-			</div>
-			<div class="column">
-				<h2>Science</h2>
-				<p>
-					<li>Bronze Medal from KSNR (Kompetisi Sains Nalaria Realistik) Primary Level 2021</li>
-					<br>
-					<li>Bronze Medal from POSI Got Talent 2021</li>
-					<br>
-					<li>Sapphire Medal from JISMO (Japanese International Science and Math Olympiad) for Science
-						Category (Grade 5)</li>
-				</p>
-			</div>
-			<div class="column">
-				<h2>English</h2>
-				<p>
-					<li>3rd Winner of BeeKidz Story Reading Olympiad 2019</li>
-					<br>
-					<li>3rd Winner of Brilliance National English Writing Story Primary School 2021</li>
-				</p>
-			</div>
-			</column>
-	</section>
+        <section>
+            <h2 class="award_heading">Honorable Mention</h2>
+            <columns>
+                <div class="column">
+                    <h2>Math</h2>
+                    <p>
+                        <li>
+                            Honorable Mention from SIMOC Math Olympiad 2021 for
+                            Grade 5
+                        </li>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>Science</h2>
+                    <p>
+                        <li>
+                            Honorable mention of International Kangaroo Science
+                            Contest 2019 for Grade 3-4
+                        </li>
+                    </p>
+                </div>
+            </columns>
+        </section>
 
-	<section id="honorable" style="background-image: url(img/award_logo/honorable.png);"
-		class="parallax--bg award_header">
-		<div class="container">
-			<h1 class="title parallax--box">Honorable Mention</h1>
-		</div>
-		<div id="about"></div>
-	</section>
+        <section
+            id="others"
+            style="
+                background-image: url(img/award_logo/others.jpeg);
+                background-size: 50%;
+                color: white;
+            "
+            class="parallax--bg award_header"
+        >
+            <div class="container">
+                <h1 class="title parallax--box">Others</h1>
+            </div>
+            <div id="about"></div>
+        </section>
 
-	<section>
-		<h2 class="award_heading">Honorable Mention</h2>
-		<columns>
-			<div class="column">
-				<h2>Math</h2>
-				<p>
-					<li>Honorable Mention from SIMOC Math Olympiad 2021 for Grade 5</li>
-				</p>
-			</div>
-			<div class="column">
-				<h2>Science</h2>
-				<p>
-					<li>Honorable mention of International Kangaroo Science Contest 2019 for Grade 3-4</li>
-				</p>
-			</div>
-			</column>
-	</section>
+        <section>
+            <h2 class="award_heading">Others</h2>
+            <columns>
+                <div class="column">
+                    <h2>Math</h2>
+                    <p>
+                        <li>
+                            ‘The Best Mathematician’ award given by JISMO
+                            (Japanese International Science and Math Olympiad)
+                            Math Club for Grade 5 and 6
+                        </li>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>Science</h2>
+                    <p>
+                        <li>
+                            ‘The Best Scientist’ award given by JISMO (Japanese
+                            International Science and Math Olympiad) Science
+                            Club for Grade 5 and 6
+                        </li>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>IT</h2>
+                    <p>
+                        <li>
+                            Honor Roll - Bebras Computing Challenge 2021-2022,
+                            Benjamin Level (age 10-12)
+                        </li>
+                        <br />
+                        <li>
+                            Honor Roll - Bebras Computing Challenge 2019,
+                            Castors Level (age 8-10)
+                        </li>
+                        <br />
+                        <li>Perfect Score in NCSS Challenge (Newbies) 2019</li>
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>English</h2>
+                    <p>
+                        <li>
+                            Favorite Storyteller award from English Geek
+                            Language School for ages 9-12, 2020
+                        </li>
+                    </p>
+                </div>
+            </columns>
+        </section>
 
-	<section id="others" style="background-image: url(img/award_logo/others.jpeg); background-size: 50%; color: white;"
-		class="parallax--bg award_header">
-		<div class="container">
-			<h1 class="title parallax--box">Others</h1>
-		</div>
-		<div id="about"></div>
-	</section>
+        <!--Footer-->
+        <footer>
+            <div class="container">
+                <div class="col-3">
+                    <p>
+                        Hello there, yes you! To contact me, send your message
+                        to my email, which is
+                        <a
+                            class="link"
+                            target="_blank"
+                            href="mailto:richard.barlian@gmail.com"
+                            >richard.barlian@gmail.com</a
+                        >. While we're here, let me tell you my social media
+                        profiles.
+                        <br />
+                        Anyways, thanks for viewing my website!
+                    </p>
+                </div>
 
-	<section>
-		<h2 class="award_heading">Others</h2>
-		<columns>
-			<div class="column">
-				<h2>Math</h2>
-				<p>
-					<li>‘The Best Mathematician’ award given by JISMO (Japanese International Science and Math Olympiad)
-						Math Club</li>
-				</p>
-			</div>
-			<div class="column">
-				<h2>Science</h2>
-				<p>
-					<li>‘The Best Scientist’ award given by JISMO (Japanese International Science and Math Olympiad)
-						Science Club</li>
-				</p>
-			</div>
-			<div class="column">
-				<h2>IT</h2>
-				<p>
-					<li>Honor Roll - Bebras Computing Challenge 2021-2022, Benjamin Level (age 10-12)</li>
-					<br>
-					<li>Honor Roll - Bebras Computing Challenge 2019, Castors Level (age 8-10)</li>
-					<br>
-					<li>Perfect Score in NCSS Challenge (Newbies) 2019</li>
-				</p>
-			</div>
-			<div class="column">
-				<h2>English</h2>
-				<p>
-					<li>Favorite Storyteller award from English Geek Language School for ages 9-12, 2020</li>
-				</p>
-			</div>
-			</column>
-	</section>
+                <div class="col-1">
+                    <ul class="unstyled-list">
+                        <img
+                            src="img/socials_logo/facebook.svg"
+                            width="50"
+                            alt="Facebook Logo"
+                            class="center"
+                        />
+                        <li><strong>Facebook</strong></li>
+                        <li>
+                            <a
+                                class="link"
+                                target="_blank"
+                                href="https://facebook.com/richardbarlian/"
+                                >Richard Barlian</a
+                            >
+                        </li>
+                    </ul>
+                </div>
 
-	<!--Footer-->
-	<footer>
-		<div class="container">
-			<div class="col-3">
-				<p>Hello there, yes you! To contact me, send your message to my email, which is
-					<a class="link" target="_blank"
-						href="mailto:richard.barlian@gmail.com">richard.barlian@gmail.com</a>.
-					While we're here, let me tell you my social media profiles.
-					<br>
-					Anyways, thanks for viewing my website!
-			</div>
-
-			<div class="col-1">
-				<ul class="unstyled-list">
-					<img src="img/socials_logo/facebook.svg" width=50 alt="Facebook Logo" class="center">
-					<li><strong>Facebook</strong></li>
-					<li><a class="link" target="_blank" href="https://facebook.com/richardbarlian/">Richard Barlian</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="col-1">
-				<ul class="unstyled-list">
-					<img src="img/socials_logo/instagram.svg" width=50 alt="Facebook Logo" class="center">
-					<li><strong>Instagram</strong></li>
-					<li><a class="link" target="_blank"
-							href="https://instagram.com/barlian.richard/">barlian.richard</a></li>
-				</ul>
-			</div>
-		</div>
-	</footer>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script src="js/app.js"></script>
-	<script src="js/tilt.jquery.js"></script>
-</body>
-
+                <div class="col-1">
+                    <ul class="unstyled-list">
+                        <img
+                            src="img/socials_logo/instagram.svg"
+                            width="50"
+                            alt="Facebook Logo"
+                            class="center"
+                        />
+                        <li><strong>Instagram</strong></li>
+                        <li>
+                            <a
+                                class="link"
+                                target="_blank"
+                                href="https://instagram.com/barlian.richard/"
+                                >barlian.richard</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/app.js"></script>
+        <script src="js/tilt.jquery.js"></script>
+    </body>
 </html>
